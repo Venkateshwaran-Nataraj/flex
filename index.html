@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex layout</title>
+
+    <style>
+     
+        #container{
+            border: 2px solid black;
+            display: flex;
+           
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap:10px;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+          
+
+          
+                 
+            
+        }
+
+   .box {
+    background-color: #3498db;
+    color: white;
+
+  
+    text-align: center;
+    height: 300px;
+    width: 150px;
+    border: 3px solid black;
+    align-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+ 
+   }
+
+   #f1{
+    background-color: #e33d9f;
+    flex-shrink: 10;
+   }
+   #f2{
+    background-color: #51CFCE;
+    flex-grow:100 ;
+   }
+
+#f3{
+    background-color: #E55943;
+    flex-basis: 200px; 
+}
+
+#f4{
+    background-color: #EDDA1C;
+    flex-grow:100 ;
+    align-self: center;
+
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+ <div id="f1" class="box">
+
+    flex-shrink
+ </div>
+
+ <div id="f2" class="box">
+
+    flex-grow
+ </div>
+
+ <div id="f3" class="box">
+    flex-basis 
+
+ </div>
+
+ <div id="f4" class="box">
+
+    align-self
+ </div>
+ 
+    </div>
+</body>
+</html>
